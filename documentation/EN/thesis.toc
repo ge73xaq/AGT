@@ -66,36 +66,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Design of experiment}{14}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Exponential and Poisson distribution}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1.2}Interesting findings}{15}{subsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Exponential and Poisson distribution}{17}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Truncated Normal distribution}{17}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Prove of regularity}{18}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Myerson regularity}{18}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Result of experiment}{19}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Result of experiment}{21}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Pareto distribution}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Pareto distribution}{21}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}another idea: integrate f(x) to 1}{20}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}another idea: integrate f(x) to 1}{22}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Single bidder and single item Randomization}{23}{chapter.3}%
+\contentsline {section}{\numberline {2.5}conclution table}{23}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Uniform distribution}{24}{section.3.1}%
+\contentsline {chapter}{\numberline {3}Single bidder and single item Randomization}{25}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Normal distribution}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.1}Uniform distribution}{26}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Additional notes}{27}{chapter.4}%
+\contentsline {section}{\numberline {3.2}Normal distribution}{26}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}truncated normal distribution part}{27}{section.4.1}%
+\contentsline {section}{\numberline {3.3}Observation from experiment}{27}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}One hot encoding}{29}{chapter.5}%
+\contentsline {chapter}{\numberline {4}Additional notes}{29}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Further Reading}{31}{chapter.6}%
+\contentsline {section}{\numberline {4.1}truncated normal distribution part}{29}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Remarks on Implementation}{33}{appendix.A}%
+\contentsline {chapter}{\numberline {5}One hot encoding}{31}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{35}{chapter*.10}%
+\contentsline {chapter}{\numberline {6}Further Reading}{33}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{37}{chapter*.12}%
+\contentsline {chapter}{\numberline {A}Remarks on Implementation}{35}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{37}{chapter*.12}%
+\contentsline {chapter}{\nonumberline List of Figures}{37}{chapter*.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{39}{chapter*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Index}{39}{chapter*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{41}{chapter*.15}%

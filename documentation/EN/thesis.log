@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  13 JAN 2021 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  21 JAN 2021 18:58
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1611,14 +1611,14 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 71.
+Package hyperref Info: Option `colorlinks' set `true' on input line 73.
 Package scrbase Info: Unknown processing state.
 (scrbase)             Processing option `subject=Short Overview'
 (scrbase)             of member `.tumthesis.cls'
 (scrbase)             of family `title'
 (scrbase)             doesn't set a valid state.
 (scrbase)             This will be interpreted
-(scrbase)             as \FamilyKeyStateProcessed on input line 87.
+(scrbase)             as \FamilyKeyStateProcessed on input line 89.
 \thesis@idxfile=\write5
 \openout5 = `thesis.idx'.
 
@@ -1661,42 +1661,42 @@ LaTeX Warning: Unused global option(s):
 (appendix.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 98
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 10
+0.
 
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package scrbase Info: activating english \contentsname on input line 98.
-Package scrbase Info: activating english \listfigurename on input line 98.
-Package scrbase Info: activating english \listtablename on input line 98.
-LaTeX Info: Redefining \dots on input line 98.
+Package scrbase Info: activating english \contentsname on input line 100.
+Package scrbase Info: activating english \listfigurename on input line 100.
+Package scrbase Info: activating english \listtablename on input line 100.
+LaTeX Info: Redefining \dots on input line 100.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 98.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 98.
-LaTeX Info: Redefining \microtypecontext on input line 98.
+LaTeX Info: Redefining \selectfont on input line 100.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 100.
+LaTeX Info: Redefining \microtypecontext on input line 100.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 98.
+LaTeX Info: Redefining \showhyphens on input line 100.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1748,114 +1748,78 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `thesis.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' not found.
-
-No file thesis.bbl.
-
-Package biblatex Warning: citation 'KohmMorawski2012' was not found at all in t
-he .bbl, bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'KohmMorawski2012b' was not found at all in 
-the .bbl, bibliography labels cannot be generated, please correct the citation.
-
-
-
-Package biblatex Warning: citation 'ntheorem' was not found at all in the .bbl,
- bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'Tantau2007' was not found at all in the .bb
-l, bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'fixme' was not found at all in the .bbl, bi
-bliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'listings' was not found at all in the .bbl,
- bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'l2short' was not found at all in the .bbl, 
-bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'vanDongen2012' was not found at all in the 
-.bbl, bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'l2tabu' was not found at all in the .bbl, b
-ibliography labels cannot be generated, please correct the citation.
-
-Package biblatex Info: Reference section=0 on input line 98.
-Package biblatex Info: Reference segment=0 on input line 98.
+Package biblatex Info: ... file 'thesis.bbl' found.
+ (thesis.bbl)
+Package biblatex Info: Reference section=0 on input line 100.
+Package biblatex Info: Reference segment=0 on input line 100.
 \c@lstlisting=\count425
 Package scrbase Info: activating english \tumthesis@projectpapername on input l
-ine 98.
+ine 100.
 Package scrbase Info: activating english \tumthesis@seminarpapername on input l
-ine 98.
+ine 100.
 Package scrbase Info: activating english \tumthesis@diplomathesisname on input 
-line 98.
+line 100.
 Package scrbase Info: activating english \tumthesis@masterthesisname on input l
-ine 98.
+ine 100.
 Package scrbase Info: activating english \tumthesis@bachelorthesisname on input
- line 98.
+ line 100.
 Package scrbase Info: activating english \tumthesis@idpreportname on input line
- 98.
-Package scrbase Info: activating english \examinername on input line 98.
-Package scrbase Info: activating english \advisorname on input line 98.
-Package scrbase Info: activating english \submissiondatename on input line 98.
-Package scrbase Info: activating english \faculty on input line 98.
-Package scrbase Info: activating english \placedateseparator on input line 98.
-Package scrbase Info: activating english \fromname on input line 98.
-Package scrbase Info: activating english \declarationtext on input line 98.
-Package scrbase Info: activating english \tumthesis@theoremname on input line 9
-8.
+ 100.
+Package scrbase Info: activating english \examinername on input line 100.
+Package scrbase Info: activating english \advisorname on input line 100.
+Package scrbase Info: activating english \submissiondatename on input line 100.
+
+Package scrbase Info: activating english \faculty on input line 100.
+Package scrbase Info: activating english \placedateseparator on input line 100.
+
+Package scrbase Info: activating english \fromname on input line 100.
+Package scrbase Info: activating english \declarationtext on input line 100.
+Package scrbase Info: activating english \tumthesis@theoremname on input line 1
+00.
 Package scrbase Info: activating english \tumthesis@theoremnameplural on input 
-line 98.
-Package scrbase Info: activating english \tumthesis@lemmaname on input line 98.
-
+line 100.
+Package scrbase Info: activating english \tumthesis@lemmaname on input line 100
+.
 Package scrbase Info: activating english \tumthesis@lemmanameplural on input li
-ne 98.
+ne 100.
 Package scrbase Info: activating english \tumthesis@propositionname on input li
-ne 98.
+ne 100.
 Package scrbase Info: activating english \tumthesis@propositionnameplural on in
-put line 98.
+put line 100.
 Package scrbase Info: activating english \tumthesis@corollaryname on input line
- 98.
+ 100.
 Package scrbase Info: activating english \tumthesis@corollarynameplural on inpu
-t line 98.
+t line 100.
 Package scrbase Info: activating english \tumthesis@conjecturename on input lin
-e 98.
+e 100.
 Package scrbase Info: activating english \tumthesis@conjecturenameplural on inp
-ut line 98.
-Package scrbase Info: activating english \tumthesis@remarkname on input line 98
-.
+ut line 100.
+Package scrbase Info: activating english \tumthesis@remarkname on input line 10
+0.
 Package scrbase Info: activating english \tumthesis@remarknameplural on input l
-ine 98.
+ine 100.
 Package scrbase Info: activating english \tumthesis@definitionname on input lin
-e 98.
+e 100.
 Package scrbase Info: activating english \tumthesis@definitionnameplural on inp
-ut line 98.
-Package scrbase Info: activating english \tumthesis@problemname on input line 9
-8.
+ut line 100.
+Package scrbase Info: activating english \tumthesis@problemname on input line 1
+00.
 Package scrbase Info: activating english \tumthesis@problemnameplural on input 
-line 98.
-Package scrbase Info: activating english \tumthesis@examplename on input line 9
-8.
+line 100.
+Package scrbase Info: activating english \tumthesis@examplename on input line 1
+00.
 Package scrbase Info: activating english \tumthesis@examplenameplural on input 
-line 98.
-Package scrbase Info: activating english \tumthesis@proofname on input line 98.
-
-Package scrbase Info: activating english \tumthesis@proofnameplural on input li
-ne 98.
-Package scrbase Info: activating english \tumthesis@algocfname on input line 98
+line 100.
+Package scrbase Info: activating english \tumthesis@proofname on input line 100
 .
+Package scrbase Info: activating english \tumthesis@proofnameplural on input li
+ne 100.
+Package scrbase Info: activating english \tumthesis@algocfname on input line 10
+0.
 Package scrbase Info: activating english \tumthesis@algocfnameplural on input l
-ine 98.
+ine 100.
 \AtBeginShipoutBox=\box75
-Package hyperref Info: Link coloring ON on input line 98.
+Package hyperref Info: Link coloring ON on input line 100.
 
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\namer
 ef.sty"
@@ -1871,9 +1835,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count426
 )
-LaTeX Info: Redefining \ref on input line 98.
-LaTeX Info: Redefining \pageref on input line 98.
-LaTeX Info: Redefining \nameref on input line 98.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
  (thesis.out) (thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
@@ -1885,7 +1849,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 98.
+(scrbook)           before \begin{document} on input line 100.
 
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\bookm
 ark.sty"
@@ -1904,13 +1868,13 @@ e 168.
 \BKM@id=\count427
 ))
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 98.
+line 100.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 98.
-Package cleveref Info: loaded `english' language definitions on input line 102.
+line 100.
+Package cleveref Info: loaded `english' language definitions on input line 104.
 
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-03.
+05.
 
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1920,33 +1884,33 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-03.
+05.
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-03.
+05.
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-103.
+105.
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-103.
+105.
  ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd
 "
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 103.
+(Font)              <10.95> on input line 105.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 103.
+(Font)              <8> on input line 105.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 103.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 103
+(Font)              <6> on input line 105.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 105
 .
 
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.
@@ -1957,7 +1921,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 sa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 103
+LaTeX Font Info:    Trying to load font information for U+msb on input line 105
 .
 
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.
@@ -1969,28 +1933,28 @@ sb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 10
-3.
+5.
 
 ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-03.
+05.
  ("C:\Users\Ariel Lou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 105.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 103.
+(Font)              <14.4> on input line 105.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 103.
+(Font)              <10> on input line 105.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 103.
+(Font)              <7> on input line 105.
  [1
 
 
@@ -2020,7 +1984,7 @@ Package cleveref Info: loaded `english' language definitions on input line 29.
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 10
-7.
+9.
  (thesis.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 3.
@@ -2136,21 +2100,13 @@ nput line 199.
 Package cleveref Info: loaded `english' language definitions on input line 227.
 
  [6]
-
-LaTeX Warning: Citation 'KohmMorawski2012' on page 7 undefined on input line 23
-9.
-
-
-LaTeX Warning: Citation 'KohmMorawski2012b' on page 7 undefined on input line 2
-39.
-
 Package cleveref Info: loaded `ngerman' language definitions on input line 244.
 
 Package cleveref Info: loaded `english' language definitions on input line 244.
 
 Package cleveref Info: loaded `english' language definitions on input line 256.
 
-[7]
+ [7]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 259.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
@@ -2161,16 +2117,9 @@ Package hyperref Info: bookmark level for unknown beweis defaults to 0 on input
  line 270.
 Package cleveref Info: loaded `english' language definitions on input line 272.
 
-
-
-LaTeX Warning: Citation 'ntheorem' on page 8 undefined on input line 281.
-
-
-LaTeX Warning: Citation 'Tantau2007' on page 8 undefined on input line 329.
-
 Package cleveref Info: loaded `english' language definitions on input line 330.
 
-[8]
+ [8]
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
 line 414.
 FiXme Note: 'An example could follow here.' on input line 414.
@@ -2178,16 +2127,9 @@ FiXme Note: 'include in the list of recommended literature' on input line 414.
 Package cleveref Info: loaded `english' language definitions on input line 415.
 
  [9]
-
-LaTeX Warning: Citation 'fixme' on page 10 undefined on input line 423.
-
 Package cleveref Info: loaded `english' language definitions on input line 431.
 
-[10]
-
-LaTeX Warning: Citation 'listings' on page 11 undefined on input line 445.
-
-
+ [10]
 Overfull \hbox (15.81665pt too wide) in paragraph at lines 459--473
 []$[]$ $[]$ $[]$ 
  []
@@ -2198,10 +2140,10 @@ Overfull \hbox (25.40707pt too wide) in paragraph at lines 476--497
  []
 
 )
-Package cleveref Info: loaded `english' language definitions on input line 112.
+Package cleveref Info: loaded `english' language definitions on input line 114.
 
  [11]
-Package cleveref Info: loaded `english' language definitions on input line 112.
+Package cleveref Info: loaded `english' language definitions on input line 114.
 
  [12]
 \openout2 = `chapters.aux'.
@@ -2237,235 +2179,411 @@ same identifier (name{equation.2.1.2}) has been already used, duplicate ignored
                    \relax 
 l.34 \begin{equation}
                      \label{eq:2.2}
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 55.
+Package cleveref Info: loaded `english' language definitions on input line 59.
 [14]
 Package cleveref Info: loaded `english' language definitions on input line 92.
  [15pdfTeX warning (ext4): destination with the same identifier (name{equation.
-2.1.3}) has been already used, duplicate ignored
+2.1.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.92 \end{equation}
                    pdfTeX warning (ext4): destination with the same identifier 
-(name{equation.2.1.3}) has been already used, duplicate ignored
+(name{equation.2.1.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.92 \end{equation}
                    pdfTeX warning (ext4): destination with the same identifier 
-(name{equation.2.1.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.92 \end{equation}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{equation.2.1.3}) has been already used, duplicate ignored
+(name{equation.2.1.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.92 \end{equation}
                    ]pdfTeX warning (ext4): destination with the same identifier
- (name{equation.2.1.3}) has been already used, duplicate ignored
+ (name{equation.2.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.95 \begin{equation}
                      \notagpdfTeX warning (ext4): destination with the same ide
-ntifier (name{equation.2.1.3}) has been already used, duplicate ignored
+ntifier (name{equation.2.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.95 \begin{equation}
                      \notagpdfTeX warning (ext4): destination with the same ide
-ntifier (name{equation.2.1.3}) has been already used, duplicate ignored
+ntifier (name{equation.2.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.95 \begin{equation}
                      \notagpdfTeX warning (ext4): destination with the same ide
-ntifier (name{equation.2.1.3}) has been already used, duplicate ignored
+ntifier (name{equation.2.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.95 \begin{equation}
                      \notagpdfTeX warning (ext4): destination with the same ide
-ntifier (name{equation.2.1.3}) has been already used, duplicate ignored
+ntifier (name{equation.2.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \begin{equation}
-                     \notagpdfTeX warning (ext4): destination with the same ide
-ntifier (name{equation.2.1.3}) has been already used, duplicate ignored
+l.100 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \begin{equation}
-                     \notagpdfTeX warning (ext4): destination with the same ide
-ntifier (name{equation.2.1.3}) has been already used, duplicate ignored
+l.100 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \begin{equation}
-                     \notagpdfTeX warning (ext4): destination with the same ide
-ntifier (name{equation.2.1.3}) has been already used, duplicate ignored
+l.100 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \begin{equation}
-                     \notag
-Package cleveref Info: loaded `english' language definitions on input line 120.
+l.100 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.1.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.1.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.1.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.1.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      \notag
+Package cleveref Info: loaded `english' language definitions on input line 122.
 
  [16pdfTeX warning (ext4): destination with the same identifier (name{equation.
-2.1.3}) has been already used, duplicate ignored
+2.1.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.120 \begin{equation}
-                      \notag]
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-
- []
-
-Package cleveref Info: loaded `english' language definitions on input line 152.
-
-[17]
-Package cleveref Info: loaded `english' language definitions on input line 177.
-
- [18pdfTeX warning (ext4): destination with the same identifier (name{equation.
-2.3.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.177 
-      pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.2.3.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.177 
+l.122 
       ]
-Overfull \hbox (25.80145pt too wide) in paragraph at lines 180--181
-\OMS/lmsy/m/n/10.95  \OML/lmm/m/it/10.95 \OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m
-/it/10.95 \OT1/lmr/m/n/10.95 (-20) ) [] = \OMS/lmsy/m/n/10.95  \OML/lmm/m/it/1
-0.95 \OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 \OT1/lmr/m/n/10.95 (-20) 
-)\OML/lmm/m/it/10.95 Q\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 \OT1/lmr/m
-/n/10.95 (-20) ) \OML/lmm/m/it/10.95 > \OMS/lmsy/m/n/10.95  \OML/lmm/m/it/10.95
- \OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 \OT1/lmr/m/n/10.95 (-20) )[] 
-= \OMS/lmsy/m/n/10.95  \OML/lmm/m/it/10.95 \OT1/lmr/m/n/10.95 (-20) (\OML/lmm/
-m/it/10.95 \OT1/lmr/m/n/10.95 (-20) )[]$ \T1/lmr/m/n/10.95 (-20) and then $\OM
-S/lmsy/m/n/10.95  \OML/lmm/m/it/10.95 \OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it
-/10.95 \OT1/lmr/m/n/10.95 (-20) ) [] +
+Package cleveref Info: loaded `english' language definitions on input line 150.
+
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
  []
 
+Package cleveref Info: loaded `english' language definitions on input line 180.
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+[18pdfTeX warning (ext4): destination with the same identifier (name{equation.2
+.3.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.180 \end{equation}
+                    ]pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.202 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.202 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.202 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.202 \begin{equation}
+                      \notag
+Package cleveref Info: loaded `english' language definitions on input line 206.
+
+ [19pdfTeX warning (ext4): destination with the same identifier (name{equation.
+2.3.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.206 \end{equation}
+                    ]
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
-3}) has been already used, duplicate ignored
+4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206 \begin{equation}
-                      \notagpdfTeX warning (ext4): destination with the same id
-entifier (name{equation.2.3.3}) has been already used, duplicate ignored
+l.212 	\begin{equation}
+                       \notagpdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.3.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206 \begin{equation}
-                      \notagpdfTeX warning (ext4): destination with the same id
-entifier (name{equation.2.3.3}) has been already used, duplicate ignored
+l.212 	\begin{equation}
+                       \notagpdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.3.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206 \begin{equation}
-                      \notagpdfTeX warning (ext4): destination with the same id
-entifier (name{equation.2.3.3}) has been already used, duplicate ignored
+l.212 	\begin{equation}
+                       \notagpdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.3.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206 \begin{equation}
-                      \notag
-Package cleveref Info: loaded `english' language definitions on input line 213.
-
- [19]
-Package cleveref Info: loaded `english' language definitions on input line 245.
-
- [20pdfTeX warning (ext4): destination with the same identifier (name{equation.
-2.4.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.245 
-      pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.2.4.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.245 
-      pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.2.4.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.245 
-      pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.2.4.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.245 
-      ]
-Package cleveref Info: loaded `english' language definitions on input line 250.
-
- [21] [22
-
-
-]
-chapter 3.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 267.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-[23]
-Package cleveref Info: loaded `english' language definitions on input line 310.
-
- [24]
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+l.212 	\begin{equation}
+                       \notag
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 323.
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
+4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 	\begin{equation}
+                       \notagpdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 	\begin{equation}
+                       \notagpdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 	\begin{equation}
+                       \notagpdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 	\begin{equation}
+                       \notag
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[25] [26
+Package cleveref Info: loaded `english' language definitions on input line 227.
+
+ [20]pdfTeX warning (ext4): destination with the same identifier (name{equation
+.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.239 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.239 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.239 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.239 \begin{equation}
+                      \notag
+Package cleveref Info: loaded `english' language definitions on input line 247.
+
+ [21]
+Package cleveref Info: loaded `english' language definitions on input line 281.
+
+ [22pdfTeX warning (ext4): destination with the same identifier (name{equation.
+2.4.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.281 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.4.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.281 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.4.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.281 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.4.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.281 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.4.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.281 
+      ]pdfTeX warning (ext4): destination with the same identifier (name{equati
+on.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.284 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.284 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.284 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.284 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.297 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.297 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.297 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.297 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.302 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.302 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.302 \begin{equation}
+                      \notagpdfTeX warning (ext4): destination with the same id
+entifier (name{equation.2.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.302 \begin{equation}
+                      \notag
+Underfull \hbox (badness 4872) in paragraph at lines 314--314
+[]|\T1/lmr/bx/n/10.95 Theoritical $\OML/lmm/m/it/10.95 []$
+ []
+
+
+Overfull \hbox (8.83594pt too wide) in paragraph at lines 318--318
+[]|\T1/lmr/m/n/10.95 (-20) 0.7555106397628669| 
+ []
+
+
+Overfull \hbox (11.58867pt too wide) in paragraph at lines 312--323
+[][] 
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 329.
+
+[23]
+Package cleveref Info: loaded `english' language definitions on input line 339.
+
+ [24]
+chapter 3.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 356.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+[25
+
+
+]
+Package cleveref Info: loaded `english' language definitions on input line 399.
+
+ [26]
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 420.
+
+[27] [28
 
 
 ]
 chapter 4.
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 
-Overfull \hbox (35.93436pt too wide) in paragraph at lines 395--399
+Overfull \hbox (35.93436pt too wide) in paragraph at lines 492--496
 \T1/lmr/m/n/10.95 (-20) outside for loop Nor-mal dis-tri-bu-tion APX = [1.12655
 521] the to-tal run-time: 123.03474499999993
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--399
+Underfull \hbox (badness 10000) in paragraph at lines 492--496
 
  []
 
 
-Overfull \hbox (35.4334pt too wide) in paragraph at lines 400--413
+Overfull \hbox (35.4334pt too wide) in paragraph at lines 497--510
 \T1/lmr/m/n/10.95 (-20) within the for loop $\OML/lmm/m/it/10.95 np:average\OT1
 /lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 APX[]orm[]ist\OT1/lmr/m/n/10.95 (-20)
  )$ \T1/lmr/m/n/10.95 (-20) Nor-mal dis-tri-bu-tion APX = 1.1515851528631347
  []
 
 
-Overfull \hbox (26.52844pt too wide) in paragraph at lines 400--413
+Overfull \hbox (26.52844pt too wide) in paragraph at lines 497--510
 \T1/lmr/m/n/10.95 (-20) the to-tal run-time: 2193.8029290000004 sec-onds sum($\
 OML/lmm/m/it/10.95 opt[]orm[]ist\OT1/lmr/m/n/10.95 (-20) )\OML/lmm/m/it/10.95 =
 sum\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 exp[]orm[]evenue[]ist$\T1/lmr/
@@ -2473,59 +2591,50 @@ m/n/10.95 (-20) )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--413
+Underfull \hbox (badness 10000) in paragraph at lines 497--510
 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 414.
+Package cleveref Info: loaded `english' language definitions on input line 511.
 
-[28]
+[30]
 chapter 5.
 
-Overfull \hbox (22.3627pt too wide) in paragraph at lines 435--437
+Overfull \hbox (22.3627pt too wide) in paragraph at lines 532--534
 \T1/lmr/m/n/10.95 (-20) source:https://www.analyticsvidhya.com/blog/2020/03/one
 -hot-encoding-vs-label-encoding-
  []
 
-) [29
+) [31
 
 
 ]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex [30
+ (conclusion.tex [32
 
 
 
 
 ]
 chapter 6.
-
-LaTeX Warning: Citation 'l2short' on page 31 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'vanDongen2012' on page 31 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'l2tabu' on page 31 undefined on input line 19.
-
-) [31]
+) [33]
 \openout2 = `appendix.aux'.
 
- (appendix.tex [32
+ (appendix.tex [34
 
 
 
 
 ]
 chapter A.
-) [33] [34
+) [35] [36
 
 
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 12
-3.
+5.
  (thesis.lof
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 3.
@@ -2541,19 +2650,15 @@ Package cleveref Info: loaded `english' language definitions on input line 13.
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
+ [37
 
 
-LaTeX Warning: Citation 'Tantau2007' on page 35 undefined on input line 127.
-
-[35
-
-
-] [36
+] [38
 
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 13
-2.
+4.
  (thesis.lot
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 3.
@@ -2569,17 +2674,22 @@ Package cleveref Info: loaded `english' language definitions on input line 15.
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [37] [38
+ [39] [40
 
 
 ]
 No file thesis.ind.
+chapter without number
+[41
 
-LaTeX Warning: Empty bibliography on input line 156.
 
+] [42
+
+
+]
 Package tocbasic Info: character protrusion at lox deactivated on input line 16
-0.
-(thesis.lox
+2.
+ (thesis.lox
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 2.
 Package cleveref Info: loaded `english' language definitions on input line 3.
@@ -2594,10 +2704,7 @@ Package cleveref Info: loaded `english' language definitions on input line 10.
 \tf@lox=\write10
 \openout10 = `thesis.lox'.
 
- [39
-
-
-]
+ [43]
 \tf@thm=\write11
 \openout11 = `thesis.thm'.
 
@@ -2614,8 +2721,8 @@ No complaints by nag.
 Package imakeidx Warning: Remember to run (pdf)latex again after calling
 (imakeidx)                `texindy -s myindex thesis.idx'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
 (thesis.aux
 Package cleveref Info: loaded `english' language definitions on input line 24.
 Package cleveref Info: loaded `english' language definitions on input line 29.
@@ -2631,31 +2738,22 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 72.
 Package cleveref Info: loaded `english' language definitions on input line 74.
 ) (chapters.aux) (conclusion.aux)
 (appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40597 strings out of 492484
- 770292 string characters out of 3119787
- 1428132 words of memory out of 3000000
- 43846 multiletter control sequences out of 15000+200000
+ 40684 strings out of 492484
+ 771762 string characters out of 3119787
+ 1435062 words of memory out of 3000000
+ 43909 multiletter control sequences out of 15000+200000
  109657 words of font info for 163 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 72i,19n,129p,10068b,4953s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,129p,10068b,4953s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Ariel Lou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-e
 c.enc}{C:/Users/Ariel Lou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
 lm-mathex.enc}{C:/Users/Ariel Lou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
@@ -2692,9 +2790,9 @@ sers/Ariel Lou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtti10.
 pfb><C:/Users/Ariel Lou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msam10.pfb><C:/Users/Ariel Lou/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (47 pages, 642195 bytes).
+Output written on thesis.pdf (51 pages, 668723 bytes).
 PDF statistics:
- 720 PDF objects out of 1000 (max. 8388607)
- 196 named destinations out of 1000 (max. 500000)
- 33141 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 218 named destinations out of 1000 (max. 500000)
+ 33173 words of extra memory for PDF output out of 35830 (max. 10000000)
 

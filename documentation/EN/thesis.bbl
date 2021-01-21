@@ -1,0 +1,319 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{vanDongen2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=40c2c3f83701248d4475a3a0a6f84f9f}{%
+           family={Dongeren},
+           familyi={D\bibinitperiod},
+           given={Marc\bibnamedelimb R.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{40c2c3f83701248d4475a3a0a6f84f9f}
+      \strng{fullhash}{40c2c3f83701248d4475a3a0a6f84f9f}
+      \strng{bibnamehash}{40c2c3f83701248d4475a3a0a6f84f9f}
+      \strng{authorbibnamehash}{40c2c3f83701248d4475a3a0a6f84f9f}
+      \strng{authornamehash}{40c2c3f83701248d4475a3a0a6f84f9f}
+      \strng{authorfullhash}{40c2c3f83701248d4475a3a0a6f84f9f}
+      \field{labelalpha}{Don12}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{LaTeX and Friends}
+      \field{year}{2012}
+    \endentry
+    \entry{l2tabu}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=742d0716dcbb71e996d9bed8472b5eb7}{%
+           family={Ensenbach},
+           familyi={E\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=adc740270dcb72e5cf4685c626f4845e}{%
+           family={Trettin},
+           familyi={T\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0667c5674e19e2953b31f08b8d9093d5}
+      \strng{fullhash}{0667c5674e19e2953b31f08b8d9093d5}
+      \strng{bibnamehash}{0667c5674e19e2953b31f08b8d9093d5}
+      \strng{authorbibnamehash}{0667c5674e19e2953b31f08b8d9093d5}
+      \strng{authornamehash}{0667c5674e19e2953b31f08b8d9093d5}
+      \strng{authorfullhash}{0667c5674e19e2953b31f08b8d9093d5}
+      \field{labelalpha}{ET11}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Das LATEX 2e-Sündenregister}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb http://mirror.ctan.org/info/l2tabu/german/l2tabu.pdf
+      \endverb
+      \verb{url}
+      \verb http://mirror.ctan.org/info/l2tabu/german/l2tabu.pdf
+      \endverb
+    \endentry
+    \entry{listings}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=747dec8ed75a5f07a9fbcea7139456df}{%
+           family={Heinz},
+           familyi={H\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod}}}%
+        {{hash=463c9d61d2aa5ab67f05b9257a4f03c4}{%
+           family={Moses},
+           familyi={M\bibinitperiod},
+           given={Brooks},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1bdb4a31340bc6277dd3ffe6523ba20f}
+      \strng{fullhash}{1bdb4a31340bc6277dd3ffe6523ba20f}
+      \strng{bibnamehash}{1bdb4a31340bc6277dd3ffe6523ba20f}
+      \strng{authorbibnamehash}{1bdb4a31340bc6277dd3ffe6523ba20f}
+      \strng{authornamehash}{1bdb4a31340bc6277dd3ffe6523ba20f}
+      \strng{authorfullhash}{1bdb4a31340bc6277dd3ffe6523ba20f}
+      \field{labelalpha}{HM07}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Listings Package}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb http://mirrors.ctan.org/macros/latex/contrib/listings/listings.pdf
+      \endverb
+      \verb{url}
+      \verb http://mirrors.ctan.org/macros/latex/contrib/listings/listings.pdf
+      \endverb
+    \endentry
+    \entry{KohmMorawski2012}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=ef6495d81d29fa9940e9d8ca208f831e}{%
+           family={Kohm},
+           familyi={K\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=22c900f39257902066bb7f71bb6a25df}{%
+           family={Morawski},
+           familyi={M\bibinitperiod},
+           given={Jens-Uwe},
+           giveni={J\bibinithyphendelim U\bibinitperiod}}}%
+      }
+      \strng{namehash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{fullhash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{bibnamehash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{authorbibnamehash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{authornamehash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{authorfullhash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \field{extraname}{1}
+      \field{labelalpha}{KM12}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{KOMA-Script}
+      \field{year}{2012}
+    \endentry
+    \entry{KohmMorawski2012b}{book}{}
+      \name{author}{2}{}{%
+        {{hash=ef6495d81d29fa9940e9d8ca208f831e}{%
+           family={Kohm},
+           familyi={K\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=22c900f39257902066bb7f71bb6a25df}{%
+           family={Morawski},
+           familyi={M\bibinitperiod},
+           given={Jens-Uwe},
+           giveni={J\bibinithyphendelim U\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Verlag:Lehmanns}%
+      }
+      \strng{namehash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{fullhash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{bibnamehash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{authorbibnamehash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{authornamehash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \strng{authorfullhash}{fdb1bb33f648df3a4e6c68803e9b8055}
+      \field{extraname}{2}
+      \field{labelalpha}{KM12}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4. Auflage}
+      \field{title}{KOMA-Script}
+      \field{year}{2012}
+    \endentry
+    \entry{ntheorem}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=3fdc58b941e31172cf46259ba3e6c215}{%
+           family={May},
+           familyi={M\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=3171e6483936d68515bb5a532c15963e}{%
+           family={Schedler},
+           familyi={S\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{67642c42f2bf85c6415cc69188ada37f}
+      \strng{fullhash}{67642c42f2bf85c6415cc69188ada37f}
+      \strng{bibnamehash}{67642c42f2bf85c6415cc69188ada37f}
+      \strng{authorbibnamehash}{67642c42f2bf85c6415cc69188ada37f}
+      \strng{authornamehash}{67642c42f2bf85c6415cc69188ada37f}
+      \strng{authorfullhash}{67642c42f2bf85c6415cc69188ada37f}
+      \field{labelalpha}{MS11}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Extension of the LATEX-Theorem Evironment}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb http://mirrors.ctan.org/macros/latex/contrib/ntheorem/ntheorem.pdf
+      \endverb
+      \verb{url}
+      \verb http://mirrors.ctan.org/macros/latex/contrib/ntheorem/ntheorem.pdf
+      \endverb
+    \endentry
+    \entry{l2short}{manual}{}
+      \name{author}{4}{}{%
+        {{hash=5d11479143005f8afd00a80db661847f}{%
+           family={Oetiker},
+           familyi={O\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8ca96670929452aa6904ed514c3b557d}{%
+           family={Partl},
+           familyi={P\bibinitperiod},
+           given={Hubert},
+           giveni={H\bibinitperiod}}}%
+        {{hash=db9b819bf4a42d221113f40ed8c86d64}{%
+           family={Hyna},
+           familyi={H\bibinitperiod},
+           given={Irene},
+           giveni={I\bibinitperiod}}}%
+        {{hash=18761ea06cd8d6305a71fa1fde3f4b19}{%
+           family={Schlegl},
+           familyi={S\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{febdb7d8cc94bfeec1182be1d0189280}
+      \strng{fullhash}{8fca386a8f8bd6243f3461ae9167a2f4}
+      \strng{bibnamehash}{8fca386a8f8bd6243f3461ae9167a2f4}
+      \strng{authorbibnamehash}{8fca386a8f8bd6243f3461ae9167a2f4}
+      \strng{authornamehash}{febdb7d8cc94bfeec1182be1d0189280}
+      \strng{authorfullhash}{8fca386a8f8bd6243f3461ae9167a2f4}
+      \field{labelalpha}{Oet+11}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Not So Short Introduction to LATEX2e}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb http://tobi.oetiker.ch/lshort/lshort.pdf
+      \endverb
+      \verb{url}
+      \verb http://tobi.oetiker.ch/lshort/lshort.pdf
+      \endverb
+    \endentry
+    \entry{Tantau2007}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=129e88d9b4e0ba07ca911d6e9aebfaca}{%
+           family={Tantau},
+           familyi={T\bibinitperiod},
+           given={Till},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Lübeck}%
+      }
+      \strng{namehash}{129e88d9b4e0ba07ca911d6e9aebfaca}
+      \strng{fullhash}{129e88d9b4e0ba07ca911d6e9aebfaca}
+      \strng{bibnamehash}{129e88d9b4e0ba07ca911d6e9aebfaca}
+      \strng{authorbibnamehash}{129e88d9b4e0ba07ca911d6e9aebfaca}
+      \strng{authornamehash}{129e88d9b4e0ba07ca911d6e9aebfaca}
+      \strng{authorfullhash}{129e88d9b4e0ba07ca911d6e9aebfaca}
+      \field{labelalpha}{Tan08}
+      \field{sortinit}{t}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{The TikZ and PGF Packages. Manual for version 2.00}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb http://sourceforge.net/projects/pgf
+      \endverb
+      \verb{url}
+      \verb http://sourceforge.net/projects/pgf
+      \endverb
+    \endentry
+    \entry{fixme}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=c169636b2668ff0c0fa3ef92e3836963}{%
+           family={Verna},
+           familyi={V\bibinitperiod},
+           given={Didier},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c169636b2668ff0c0fa3ef92e3836963}
+      \strng{fullhash}{c169636b2668ff0c0fa3ef92e3836963}
+      \strng{bibnamehash}{c169636b2668ff0c0fa3ef92e3836963}
+      \strng{authorbibnamehash}{c169636b2668ff0c0fa3ef92e3836963}
+      \strng{authornamehash}{c169636b2668ff0c0fa3ef92e3836963}
+      \strng{authorfullhash}{c169636b2668ff0c0fa3ef92e3836963}
+      \field{labelalpha}{Ver09}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FiXme – Collaborative annotation tool for LATEX}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb http://mirror.ctan.org/macros/latex/contrib/fixme/fixme.pdf
+      \endverb
+      \verb{url}
+      \verb http://mirror.ctan.org/macros/latex/contrib/fixme/fixme.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

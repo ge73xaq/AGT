@@ -34,7 +34,11 @@ From paper Robust**, we can compute the deterministic robust approximation ratio
 \begin{equation}\label{eq:2.2}
 \frac {(\rho_{D}-1)^{3}}{(2\rho_{D}-1)^{2}} = r^{2}
 \end{equation} 
-where $r = \frac{\sigma}{u}$ is called \textit{coefficient of variation (CV)}. If we look at the right hand side expression $\frac {(\rho_{D}-1)^{3}}{(2\rho_{D}-1)^{2}}$ is increasing and goes from 0 at $\rho_{D} = 1$ to $\infty$ at $\rho_{d} \rightarrow \infty$, so that for any nonegative $r$ there is a unique solution $\rho_{D} \in [1,\infty)$ to the above equation. Using this ratio, we can determine the \textit{take-it-or-leave-it price of} $p = \frac{\rho_{D}(r)}{2\rho_{D}(r)-1}\cdot \mu$.
+where $r = \frac{\sigma}{u}$ is called \textit{coefficient of variation (CV)}. If we look at the left-hand side expression $\frac {(\rho_{D}-1)^{3}}{(2\rho_{D}-1)^{2}}$ is increasing and goes from 0 at $\rho_{D} = 1$ to $\infty$ at $\rho_{D} \rightarrow \infty$, so that for any nonegative $r$ there is a unique solution $\rho_{D} \in [1,\infty)$ to the above equation. The paper proposed a reserve price in terms of this ratio for the \textit{take-it-or-leave-it} acution in following formula:
+\begin{equation}\label{eq:2.3}
+ p = \frac{\rho_{D}(r)}{2\rho_{D}(r)-1}\cdot \mu
+\end{equation} 
+
 
 For a given uniform distribution, i.e. a and b are known, therefore $r^{2}$ is also known: $r^{2} = (\frac{\sigma}{u})^{2} = \frac{(b-a)^{2}}{3(b+a)^{2}}$, then we can solve equation (2.2) and compute reserve price proposed by Robust paper, we denote this price as $p_r$. As we can see, the expected revenue when set price $p_r$ is equal to $\text{REV} = p_r\times (1-\frac {p_r-a}{b-a})$ we can indeed find the DAPX explicitly 
 
@@ -47,7 +51,7 @@ We first pick up an arbitrary uniform distribution, for example a = 2 and b = 10
 	\item We sum up the revenue for all the winning auctions and then take average ($expected\_revenue = \frac{total\_revenue}{n}$)
 \end{itemize}
 
-Although we know the exact optimal revenue for this auction, to be fair, we should run the above experiment with the optimal reserve price $\frac{b}{2}$. In this case, we can find our experiment result DAPX =$\frac{\text{OPT}}{\text{REV}} = \frac{\text{REV}(p=max \{a,\frac{b}{2}\})}{\text{REV}(p=\frac{\rho_{D}(r)}{2\rho_{D}(r)-1}\cdot \mu)}$ for uniform distribution. \\
+Although we know the exact optimal revenue for this auction, to have a fair comparison to the expected revenue, we should run the above experiment on $p_{opt} = \frac{b}{2}$. In this case, we can find our experiment result DAPX =$\frac{\text{OPT}}{\text{REV}} = \frac{\text{REV}(p=max \{a,\frac{b}{2}\})}{\text{REV}(p=\frac{\rho_{D}}{2\rho_{D}-1}\cdot \mu)}$ for uniform distribution. \\
 \textbf{Example:show one Experiment}\\
 \textbf{Experiment on $r$}\\
 Now we want to see when $r$ changes how DAPX differs. One idea is that we can fix mean $mu$ and gradually increase $b-a$, because $mu$ if middle point between $a$ and $b$, at each iteration $i$, $a_i$ and $b_i$ take a same "step" away this $mu$, therefore $sigma$ increases meanwhile $r$ increases. Within each step, we have a new uniform distribution, we repeat above experiment for this distribution and dertermine the experiment DAPX. We save  the results of DAPX and also $\rho_d$ for each step and plot them in the same graph for comparison. As you can see Figure 0.0 below
@@ -55,7 +59,8 @@ Now we want to see when $r$ changes how DAPX differs. One idea is that we can fi
 
 
 
-\textbf{Interesting findings}\\
+\subsection{Interesting findings}
+\label{sec:chap:uniDAPX}
 From various experimenting, we notice that no matter how we change $mu$ and $sigma$, the coefficience variance $r$ for uniform distribution is way smaller than 1. Which is expected, as uniform distribution is well defined distribution and actually indeed we can write r in terms of $a$ and $b$ explicitly:
 \begin{equation}\notag
 r = \frac {b-a}{\sqrt{3}(a+b)} = \frac {a+b-2a}{\sqrt{3}(a+b)} = \frac {1}{\sqrt{3}} (1-  \frac {2}{1+\frac{b}{a}})
@@ -145,28 +150,29 @@ To find optimal reserve price based on Myerson optimal acution, before we use My
 
 \textbf{Definition 2.3} The \textit{virtual valuation} of bidder $i$ with valuation $v_i$ is 
 \begin{center}
-	$\phi_i(v_i) = v_i - \frac{1-F_i(v_i)}{f_i(v_i)}$ 
+	$\psi_i(v_i) = v_i - \frac{1-F_i(v_i)}{f_i(v_i)}$ 
 \end{center}
 
-The optimal reserve price is set this \textit{virtual valuation} to 0 and find the value of $v$. Therefore for normal distribution, the optimal reserve price $p_{opt} = \phi^{-1}(0)$, in our case, we only have one bidder, so just use $v$ instead of $v_i$, then we assume $v$ is nonnegative, thus we can write $\phi(v) = v - \frac{1-F_t (v)}{f_t (v)}$, in the implementation we use numerical solver to solve this equation $\phi(v) = 0$ to get $p_{opt}$.\\
+The optimal reserve price is set this \textit{virtual valuation} to 0 and find the value of $v$. Therefore for normal distribution, the optimal reserve price $p_{opt} = \psi^{-1}(0)$, in our case, we only have one bidder, so just use $v$ instead of $v_i$, then we assume $v$ is nonnegative, thus we can write $\psi(v) = v - \frac{1-F_t (v)}{f_t (v)}$, in the implementation we use numerical solver to solve this equation $\psi(v) = 0$ to get $p_{opt}$.\\
 
-\subsection{Prove of regularity}
-In order to use this \textit{virtual valuation} concept, we needs to prove its regularity. And to prove $\phi(v)$ is regular we can also prove that the truncated normal distribution is a MHR distribution, because MHR implies regularity (this theory is mentioned where first). Hazard rate for truncated normal distribution is $h(v) = \frac{f_t(v)}{1 - F_t(v)}$, to prove this is monotone, we can take first derivative and see if the first derivative is nonnagative or not (here we assume $v \geqslant 0$): 
+\subsection{Myerson regularity}
+In order to use this \textit{virtual valuation} equation to compute $p_{opt}$, we needs to prove the regularity assumption. And to prove $\psi(v)$ is regular we can also prove that the truncated normal distribution is a MHR distribution, because MHR implies regularity (this theory is mentioned where first). 
 
-
+\begin{proof}
+Hazard rate for truncated normal distribution is $h(v) = \frac{f_t(v)}{1 - F_t(v)}$, to prove this is monotone, we can take first derivative and see if the first derivative is nonnagative or not (here we assume $v \geqslant 0$):
 \begin{equation}\notag
 \begin{split}	
 	h^{'}(v) &=\frac{f_t^{'}(v)}{1 - F_t(v)}  + \frac{f_t(v)\cdot F_t^{'} (v)}{(1 - F_t(v))^2}\\&= \frac{f_t^{'}(v)}{1 - F_t(v)}  + \frac{f_t^{2}(v)}{(1 - F_t(v))^2}\\&= \frac{kf^{'}(v)}{1 - F_t(v)}  + \frac{f_t^{2}(v)}{(1 - F_t(v))^2}
 \end{split}
 \end{equation} 
-where we know $f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-u}{\sigma})^2}$ then $f^{'}(v) = -\frac{v-u}{\sigma^2} \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{v-u}{\sigma})^2} = -\frac{v-u}{\sigma^2}\cdot f(v) $ subsititute this result into above equation, we get:
+where we know $\phi(\xi) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\xi^2}$, here $\xi = \frac{v-u}{\sigma}$, then $f_t^{'}(v) = -\frac{v-u}{\sigma^2} \frac{\phi(\xi)}{\sigma Z}= -\frac{v-u}{\sigma^2}\cdot f_t^(v) $ subsititute this result into above equation, we get:
 \begin{equation}\notag
 \begin{split}	
 h^{'}(v) &=\frac{-\frac{v-u}{\sigma^2}\cdot f_t(v)}{1 - F_t(v)}  + \frac{f_t^{2}(v)}{(1 - F_t(v))^2}\\&= \frac{-\frac{v-u}{\sigma^2}\cdot f_t(v)(1 - F_t(v)) + f_t^{2}(v)}{(1 - F_t(v))^2}
 \end{split}
 \end{equation} 
 
-Now we only need to prove the dominator is non-negative or not, and then we subsititute the pdf and cdf funtion, in this case, we set $\xi = \frac{v-\mu}{\sigma}$.
+Now we only need to prove the dominator is non-negative or not, thus we subsititute the pdf and cdf funtion, since $\xi = \frac{v-\mu}{\sigma}$ we get:
 \begin{equation}\notag
 	\begin{split}	
 		-\frac{v-u}{\sigma^2}\cdot f_t(v)(1 - F_t(v)) + f_t^{2}(v) &=-\frac{\xi}{\sigma}\frac{\phi(\xi)}{\sigma Z}\left(1 -  \frac{\Phi(\xi) - \Phi(\alpha)}{Z} \right) + \frac{\phi(\xi)^2}{\sigma^2 Z^2}\\&= -\frac{\xi}{\sigma}\frac{\phi(\xi)}{\sigma Z}\left( \frac{1 - \Phi(\alpha) - \Phi(\xi) + \Phi(\alpha)}{Z} \right) + \frac{\phi(\xi)^2}{\sigma^2 Z^2}\\&=-\frac{\xi\phi(\xi)}{\sigma^2 Z^2}\left( 1 - \Phi(\xi) \right)+ \frac{\phi(\xi)^2}{\sigma^2 Z^2}\\&=\frac{-\xi\phi(\xi)\left( 1 - \Phi(\xi) \right) + \phi(\xi)^2}{\sigma^2 Z^2} 
@@ -176,13 +182,14 @@ Now we only need to prove the dominator is non-negative or not, and then we subs
 Again we get nonnegative denominator, so we can just check the sign of nominator. We consider it into two cases:
 
 \begin{itemize}
-	\item Case 1: if $v \leqslant \mu$ then $-\xi \geqslant 0$, we know $\phi(\xi), 1-\Phi(\xi)$ is nonnegative, then $-\xi\phi(\xi)\left( 1 - \Phi(\xi) \right) + \phi(\xi)^2$ is nonnegative
-	\item Case 2: if  $v > \mu$ then $\xi > 0$, We know that Q-funtion is defined as $Q(\xi) = 1- \Phi(\xi)$, and it has two bounds when $\xi > 0, \left( \frac{\xi}{1+\xi^2} \right)\phi(\xi) < Q(\xi) <\frac{\phi(\xi)}{\xi}$, thus  $-\xi\phi(\xi)\left( 1 - \Phi(\xi) \right) = -\xi\phi(\xi) Q(\xi)  > - \xi\phi(\xi)\frac{\phi(\xi)}{\xi} = -\phi(\xi)^2$ and then  $-\xi\phi(\xi)\left( 1 - \Phi(\xi) \right) + \phi(\xi)^2 > -\phi(\xi)^2 + \phi(\xi)^2 = 0$
+	\item Case 1: if $v \leqslant \mu$ then $-\xi \geqslant 0$,\\ we know $\phi(\xi), 1-\Phi(\xi)$ is nonnegative, then $-\xi\phi(\xi)\left( 1 - \Phi(\xi) \right) + \phi(\xi)^2$ is nonnegative
+	\item Case 2: if  $v > \mu$ then $\xi > 0$, \\
+	 we know that Q-funtion is defined as $Q(\xi) = 1- \Phi(\xi)$, and it has two bounds when $\xi > 0$,\begin{center}
+	 	$\left( \frac{\xi}{1+\xi^2} \right)\phi(\xi) < Q(\xi) <\frac{\phi(\xi)}{\xi}$
+	 \end{center}  thus  $-\xi\phi(\xi)\left( 1 - \Phi(\xi) \right) = -\xi\phi(\xi) Q(\xi)  > - \xi\phi(\xi)\frac{\phi(\xi)}{\xi} = -\phi(\xi)^2$ \\ and  $-\xi\phi(\xi)\left( 1 - \Phi(\xi) \right) + \phi(\xi)^2 > -\phi(\xi)^2 + \phi(\xi)^2 = 0$
 \end{itemize}
-
- The nominator is again nonnegative. We prove that the first derivative is nonnagtive, thus the hazard rate of truncated normal distribution is monotonly increasing, and truncated normal distribution MHR distribution. 
-
-
+ In both case, we prove that the nominator is nonnegative, thus the first derivative is nonnagtive, which proves the hazard rate of truncated normal distribution is monotonely increasing, and truncated normal distribution is a MHR distribution. 
+\end{proof}
 
 Now let's determine the mean and variance of this one sided truncated normal distribution.
 One sided truncation with $X \geqslant 0$, let $\alpha = \frac{- \mu}{\sigma}, \beta = \infty$ and $\phi(x), \Phi(x) $ are pdf and cdf of standard normal distribution, thus $\phi(\beta) = 0, \Phi(\beta) = 1$ then 
@@ -191,9 +198,35 @@ One sided truncation with $X \geqslant 0$, let $\alpha = \frac{- \mu}{\sigma}, \
 	$E(X | X \geqslant 0) = \mu + \frac{\sigma \phi(\alpha)}{1 - \Phi(\alpha)}$\\
 	$Var( X | X \geqslant 0) = \sigma^2 [1+\frac{\alpha \phi(\alpha)}{1 - \Phi(\alpha)}-(\frac{ \phi(\alpha)}{1 - \Phi(\alpha)})^2]$
 \end{center}
-where $\phi(x), \Phi(x) $ are pdf and cdf of standard normal distribution
-and \\
+Then 
+\begin{equation}\notag
+	\begin{split}
+		r &= \frac{\sigma \sqrt{1+\frac{\alpha \phi(\alpha)}{1 - \Phi(\alpha)}-(\frac{ \phi(\alpha)}{1 - \Phi(\alpha)})^2}}{ \mu + \frac{\sigma \phi(\alpha)}{1 - \Phi(\alpha)}} \\&=  \frac{ \sqrt{1-\left(-\frac{\alpha \phi(\alpha)}{1 - \Phi(\alpha)}+(\frac{ \phi(\alpha)}{1 - \Phi(\alpha)})^2 + \frac{\alpha^2}{4}\right) +\frac{\alpha^2}{4} }}{ \frac{\mu}{\sigma} + \frac{ \phi(\alpha)}{1 - \Phi(\alpha)}} \\&= \frac{ \sqrt{1+\frac{\alpha^2}{4}-\left(\frac{ \phi(\alpha)}{1 - \Phi(\alpha)}- \frac{\alpha}{2}\right)^2  }}{ -\alpha + \frac{ \phi(\alpha)}{1 - \Phi(\alpha)}}
+	\end{split}
+\end{equation} 
 
+Since $\alpha = -\frac{\mu}{\sigma}$ and $\mu, \sigma$ are nonnegative, if we consider two extrem cases:
+
+\begin{itemize}
+	\item Case 1: when $\alpha \to -\infty$ then: \\ 
+	\begin{equation}\notag
+		\begin{split}
+			r &=  \displaystyle{\lim_{\alpha \to -\infty}}\frac{ \sqrt{1+\frac{\alpha^2}{4}-\left(\frac{ \phi(\alpha)}{1 - \Phi(\alpha)}- \frac{\alpha}{2}\right)^2  }}{ -\alpha + \frac{ \phi(\alpha)}{1 - \Phi(\alpha)}}  \\&= 
+			\displaystyle{\lim_{\alpha \to -\infty}}\frac{ \sqrt{1+\frac{\alpha^2}{4}-\left(\frac{0}{1 - 0}- \frac{\alpha}{2}\right)^2  }}{ -\alpha + \frac{ 0}{1 - 0}}  \\&= 
+			\displaystyle{\lim_{\alpha \to -\infty}}\frac{ \sqrt{1+\frac{\alpha^2}{4}-\frac{\alpha^2}{4}}}{ -\alpha } \\&= 
+			\displaystyle{\lim_{\alpha \to -\infty}}-\frac{1}{\alpha}\\&= 0
+		\end{split}
+	\end{equation} 
+	\item Case 2:  when $\alpha \to 0$ then: \\ 
+	\begin{equation}\notag
+	\begin{split}
+		r &=  \displaystyle{\lim_{\alpha \to 0}}\frac{ \sqrt{1+\frac{\alpha^2}{4}-\left(\frac{ \phi(\alpha)}{1 - \Phi(\alpha)}- \frac{\alpha}{2}\right)^2  }}{ -\alpha + \frac{ \phi(\alpha)}{1 - \Phi(\alpha)}}  \\&= 
+		\displaystyle{\lim_{\alpha \to 0}}\frac{ \sqrt{1+0-\left(\frac{ \phi(0)}{1 - \Phi(0)}- 0\right)^2  }}{ 0 + \frac{ \phi(0)}{1 - \Phi(0)}} \\&= 
+		\displaystyle{\lim_{\alpha \to 0}}\frac{ \sqrt{1-\left(\frac{ \phi(0)}{0.5}\right)^2  }}{\frac{ \phi(0)}{0.5}} \\&= 0.7555106397628669
+	\end{split}
+	\end{equation} 
+\end{itemize}
+where $\phi(0) = 0.3989422804014327$. If we plot $r vs \alpha$, we can see from figure@@@@, $r$ is monotonely increase with $\alpha$, therefore the upper bound for $r$ is when $\alpha \to 0$, and our experiment also match the upper bound value we shows in case 2 above. 
 
 
 \subsection{Result of experiment}
@@ -226,7 +259,7 @@ Then let's have a look at the optimal revenue if our bidder valuation is from th
 \text{OPT}\left(F\right) = \sup_{p \geqslant 1} \text{REV}(p;F) = \sup_{p \geqslant 1} p \cdot \left(1-\left(1- \frac{1}{p^c}\right)\right) =\sup_{p \geqslant 1} \ \frac{1}{p^{c-1}}
 \end{equation}
 
-since $c>2$, then $\frac{1}{p^{c-1}}$ is monotone decreasing. When reserve price is $p = 1$, it reach the maximum expected revenue, thus OPT$(F)$ = 1. However during the experiment, the reserve price proposed by the paper is always smaller than 1, and based on the support of pareto distribution, all the bidders' valuation is not less than 1. It is obiviously not a good option to set the reserve price to below 1. When $c$ increases, the experiment reserve price is closer to 1, thus the resulted DAPX gets closer to 1. 
+since $c>2$, then $\frac{1}{p^{c-1}}$ is monotone decreasing. When reserve price $p = 1$, we can achieve the maximum expected revenue, thus OPT$(F)$ = 1. However during the experiment, the reserve price proposed by the paper is always smaller than 1, and based on the support of pareto distribution, all the bidders' valuation is not less than 1. It is obiviously not a good option to set the reserve price to below 1. When $c$ increases, the experiment reserve price is closer to 1, thus the resulted DAPX gets closer to 1. 
 
 \subsection{another idea: integrate f(x) to 1}
 now if we change the previous pareto distribution by shifting the distribution to the left by 1, in another word by extending its support to $x \in [0,\infty]$,
@@ -240,8 +273,64 @@ and
 F(x) = 1- \frac{1}{(x+1)^c}
 \end{equation} 
 
-Obviously the mean and variance of this distribution is just:
-$E[X-1] = E[X] - 1$ and $Var[X-1] = Var[X]$, which can be implemented easily in python. This time $p_{opt} =\displaystyle\arg \max_{\substack{p}} \  p(1 - (1-\frac{1}{(p-1)^c})) =\displaystyle\arg \max_{\substack{p}} \  \frac{p}{(p-1)^c}$ for me it is unclear which is optimal reserve price, 
+Now we need to check if this distribution is valid:
+\begin{equation}\notag
+	\int_{0}^{\infty} f(x) dx = 1- \frac{1}{(x+1)^c} \Biggr|_{0}^{\infty}  = 1 - 0 -(1-\frac{1}{1}) = 1     
+\end{equation}
+Now let's find the relation of mean and variance between this perato distribution and the normal one. We denote $E[X], Var[X]$ is the normal pareto mean and variance, then $E[X-1], Var[X-1]$ is the mean and variance for this extended pareto distribution. We get: $E[X-1] = E[X] - 1$ and $Var[X-1] = Var[X]$, which can be implemented easily in python. 
+
+This time $p_{opt} =\displaystyle\arg \max_{\substack{p}} \  p(1 - (1-\frac{1}{(p+1)^c})) =\displaystyle\arg \max_{\substack{p}} \  \frac{p}{(p+1)^c}$, to find $p_{opt}$, we can take the first derivative of  $\frac{p}{(p+1)^c}$, then we get:
+
+\begin{equation}\notag
+	\frac{p}{(p+1)^c}' = \frac{1}{(p+1)^c} - \frac{pc}{(p+1)^{c+1}}\doteq 0
+\end{equation} 
+Then
+
+\begin{equation}\notag
+	\begin{split}	
+		\frac{1}{(p+1)^c} - \frac{pc}{(p+1)^{c+1}} &=0\\ p + 1 - pc&= 0\\ 1 - p(c-1)&=0\\  p&=\frac{1}{c-1}
+	\end{split}
+\end{equation} 
+
+then $p_{opt} = \frac{1}{c-1}$, where $c > 2$, we can also write down the optimal revenue is
+
+\begin{equation}\notag
+	\text{OPT} =  \frac{1}{c-1} \cdot \frac{1}{(\frac{1}{c-1}+1)^c} = \frac{(c-1)^{c-1}}{c^c}
+\end{equation}
+The proposed reserve price for deterministic machenism is $p_{res} = \frac{\rho_{D} \cdot \mu}{2\rho_{D} -1} $ where the mean of this pareto distribution is $\mu = \frac{1}{c-1}$
+We can also write down the expected revenue:
+\begin{equation}\notag
+ \text{REV} =\frac{\frac{\rho_{D} \cdot  \frac{1}{c-1}}{2\rho_{D} -1}}{(\frac{\rho_{D} \cdot  \frac{1}{c-1}}{2\rho_{D} -1} + 1)^c} 
+\end{equation} 
+
+
+\section{conclution table}
+From above evaluation on different distributions, we notice for most of these distribution, $r$ has an upper bound, which also means, our theoritical $\rho_D$  and our experimental DAPX have also an upper bound. We can determine the upper bound $\rho_D$ by solving equation, and to determine uppder bound of DAPX, we will run the experiment with $r = \frac{1}{\sqrt{3}}$. The following \cref{tab:dapxbound} represent our foundings from our evaluation: 
+
+\begin{center}
+	\begin{table}[hbt]
+		\begin{tabular}{ | m{3cm} | m{3cm}| m{3cm} |m{4cm}|  } 
+		\hline
+		\textbf{Distribution}	&	\textbf{r upper bound}  & \textbf{Theoritical $\rho_D$ upper bound} & 	\textbf{Experimental DAPX upper bound}  \\ 
+		\hline
+		Uniform distribution&$\frac{1}{\sqrt{3}}$& 3.05937594 & 1.19187481 \\ 
+		\hline
+		Truncated normal distribution & 0.7555106397628669 & 4.08363389& 1.15108233 \\ 
+		\hline
+		 Pareto distribution& cell8 & cell9& aaa \\
+		\hline
+		\end{tabular}
+		\caption{predefined \texttt{ntheorem} environments}
+		\label{tab:dapxbound}
+	\end{table}
+\end{center}
+
+For uniform distribution, we discuss its DAPX in \cref{sec:chap:uniDAPX}. There are two cases, since here we are discuss the upper bound of $r$, $r$ can be $\frac{1}{\sqrt{3}}$ when $\frac{b}{a} \rightarrow \infty$, therefore in this case, $\frac{b}{2} \geqslant a$, then DAPX =  $\frac{ ( \sqrt{3}r +1)^{2}}{4 \cdot \frac{ \rho_{D}}{2\rho_{D}-1}\cdot( \sqrt{3}r+ 1-\frac{\rho_{D}}{2\rho_{D}-1})}$. We subsititute $r = \frac{1}{\sqrt{3}}$ and $\rho_D = 3.5937594$ into this equation, we can compute the upper bound for DAPX of uniform distribution, which is 1.19311999. Our experimental number in \cref{tab:dapxbound} above matches this number. We can also explicitly compute the DAPX upper bound for truncated normal distribution using following equation:
+\begin{equation}\notag
+\text{DAPX} = \frac{\text{OPT}}{\text{REV}} =\frac{p_{opt}(1-F_t(p_{opt}))} {p_r(1-F_t(p_{r}))} 	
+\end{equation} 
+where $p_{opt}$ and $p_r$ can be determined explicitly with $r = 0.7555106397628669$. Then $\sup \text{DAPX} = 1.15149945$, our experimental values matches this number. 
+
 
 
 
@@ -288,7 +377,7 @@ Now the robust reserve price $P^{log}_{\mu,\sigma}$ is distributed over the nonn
 
 \begin{equation}\notag
 \begin{split}	
-	\text{REV}(P^{log}_{\mu,\sigma} ;U[a,b]) &=\underset{p \sim F^{log}_{\mu,\sigma} }{\mathbb{E}}\left[ p(1-F_{uniform}(p))\right] \\ &= \int_{\pi_1}^{\pi_2} p(1 -  \frac{p-a}{b-a})f^{log}_{\mu,\sigma}(p)dp\\ &=\int_{\pi_1}^{\pi_2} p(1 -  \frac{p-a}{b-a}) \cdot \frac{\pi_2\frac{1}{p} -1}{\pi_2 \text{ln}\frac{\pi_2}{\pi_1} - (\pi_2-\pi_1)} dp \\&=\int_{\pi_1}^{\pi_2} \frac{p(b-p)}{b-a} \cdot \frac{\pi_2 -p}{p(\pi_2 \text{ln}\frac{\pi_2}{\pi_1} - (\pi_2-\pi_1))} dp \\&=  \frac{1}{(b-a)(\pi_2 \text{ln}\frac{\pi_2}{\pi_1} - (\pi_2-\pi_1))}\int_{\pi_1}^{\pi_2} (b-p)(\pi_2-p)dp\\&=  \frac{1}{(b-a)(\pi_2 \text{ln}\frac{\pi_2}{\pi_1} - (\pi_2-\pi_1))} \cdot \Biggr( \frac{p^3}{3} -\frac{bp^2}{2} -\frac{\pi_2p^2}{2} + b\pi_2 p \Biggr|_{\pi_2}^{\pi_1} \Biggr)              
+	\text{REV}(P^{log}_{\mu,\sigma} ;U[a,b]) &=\underset{p \sim F^{log}_{\mu,\sigma} }{\mathbb{E}}\left[ p(1-F_{uniform}(p))\right] \\ &= \int_{\pi_1}^{\pi_2} p(1 -  \frac{p-a}{b-a})f^{log}_{\mu,\sigma}(p)dp\\ &=\int_{\pi_1}^{\pi_2} p(1 -  \frac{p-a}{b-a}) \cdot \frac{\pi_2\frac{1}{p} -1}{\pi_2 \text{ln}\frac{\pi_2}{\pi_1} - (\pi_2-\pi_1)} dp \\&=\int_{\pi_1}^{\pi_2} \frac{p(b-p)}{b-a} \cdot \frac{\pi_2 -p}{p(\pi_2 \text{ln}\frac{\pi_2}{\pi_1} - (\pi_2-\pi_1))} dp \\&=  \frac{1}{(b-a)(\pi_2 \text{ln}\frac{\pi_2}{\pi_1} - (\pi_2-\pi_1))}\int_{\pi_1}^{\pi_2} (b-p)(\pi_2-p)dp\\&=  \frac{1}{(b-a)(\pi_2 \text{ln}\frac{\pi_2}{\pi_1} - (\pi_2-\pi_1))} \cdot \left( \frac{p^3}{3} -\frac{bp^2}{2} -\frac{\pi_2p^2}{2} + b\pi_2 p \Biggr|_{\pi_2}^{\pi_1} \right)              
 \end{split}
 \end{equation} 
 
@@ -317,7 +406,15 @@ however $\exists \mu, \sigma$ that the above system has no solutions. For exampl
 
 If there is a solution for $\pi_2$ then by ploting above two equations, there should be an intersection, but it seems when $r$ increases, there is no solution for the system. \\
 
+\section{Observation from experiment}
 
+As we can see from the plots above for both uniform distribution and truncated normal distribution, we can see DAPX is always smaller than APX, which means for these two distribution and for one bidder and one items, running deterministic robust auction mechanism is better than running log lottery randomization.
+
+However here also comes our questions: in general, randomization is better than deterministic mechanism. Here we compared one deterministic mechanism with one randomization mechanism given a certain valuation distribution. In the paper, APX is the ratio under worst case (worst probability distribution) with log lottery randomization. 
+
+1.Randomization is better than deterministic, but given a valuation distribution, using one specific randomization may not be better. Thus whether log lottery is the best randomization distribution. How about using uniform or truncated normal distribution for price randomization? Especially is log lottery is the best for uniform and truncated normal distribution?
+2.During the experiment, we use rejection sampling to generate random log lottery price, is the sample size sufficient enough?
+3.A better deterministic mechanism can result a better approximate robust ratio than a specific randomization mechanism, i.e. better than log lottery randomization. However in worse case, APX is always better than DAPX. 
 
 
 \chapter{Additional notes}

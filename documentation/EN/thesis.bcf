@@ -2130,15 +2130,17 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">KohmMorawski2012</bcf:citekey>
-    <bcf:citekey order="2">KohmMorawski2012b</bcf:citekey>
-    <bcf:citekey order="4">ntheorem</bcf:citekey>
-    <bcf:citekey order="5">Tantau2007</bcf:citekey>
-    <bcf:citekey order="6">fixme</bcf:citekey>
-    <bcf:citekey order="7">listings</bcf:citekey>
-    <bcf:citekey order="8">l2short</bcf:citekey>
-    <bcf:citekey order="9">vanDongen2012</bcf:citekey>
-    <bcf:citekey order="10">l2tabu</bcf:citekey>
-    <bcf:citekey order="11">Tantau2007</bcf:citekey>
+    <bcf:citekey order="2">KohmMorawski2012</bcf:citekey>
+    <bcf:citekey order="3">KohmMorawski2012b</bcf:citekey>
+    <bcf:citekey order="4">KohmMorawski2012b</bcf:citekey>
+    <bcf:citekey order="5">ntheorem</bcf:citekey>
+    <bcf:citekey order="6">Tantau2007</bcf:citekey>
+    <bcf:citekey order="7">fixme</bcf:citekey>
+    <bcf:citekey order="8">listings</bcf:citekey>
+    <bcf:citekey order="9">l2short</bcf:citekey>
+    <bcf:citekey order="10">vanDongen2012</bcf:citekey>
+    <bcf:citekey order="11">l2tabu</bcf:citekey>
+    <bcf:citekey order="12">Tantau2007</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
