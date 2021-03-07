@@ -1,5 +1,5 @@
-\babel@toc {english}{}
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
@@ -60,50 +60,60 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.8.14}tumcolors2}{11}{subsection.1.8.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Single bidder and single item}{13}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Single-bidder and Single-item Deterministic Auctions}{13}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Uniform distribution}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Uniform distribution}{14}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Design of experiment}{14}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Design of experiment}{15}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Interesting findings}{15}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}The Bound of $r$ and DAPX}{16}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Exponential and Poisson distribution}{17}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Truncated Normal distribution}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Truncated Normal distribution}{18}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Myerson regularity}{18}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Truncated Normal distribution is MHR}{21}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Result of experiment}{21}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Result of experiment: TBC}{23}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Pareto distribution}{21}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Pareto distribution}{24}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}another idea: integrate f(x) to 1}{22}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Pareto Extension}{27}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}conclution table}{23}{section.2.5}%
+\contentsline {subsection}{\numberline {2.4.2}Result}{29}{subsection.2.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Single bidder and single item Randomization}{25}{chapter.3}%
+\contentsline {section}{\numberline {2.5}Summary of Deterministic SBSI Auction}{30}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Uniform distribution}{26}{section.3.1}%
+\contentsline {chapter}{\numberline {3}Single-bidder and Single-item Randomization Auction}{33}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Normal distribution}{26}{section.3.2}%
+\contentsline {section}{\numberline {3.1}Log-Lottery Randomization}{33}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Observation from experiment}{27}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Uniform distribution}{34}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Additional notes}{29}{chapter.4}%
+\contentsline {section}{\numberline {3.3}Normal distribution}{35}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}truncated normal distribution part}{29}{section.4.1}%
+\contentsline {section}{\numberline {3.4}Observation from experiment}{35}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}One hot encoding}{31}{chapter.5}%
+\contentsline {section}{\numberline {3.5}Uniform Randomization}{36}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Further Reading}{33}{chapter.6}%
+\contentsline {section}{\numberline {3.6}Truncated Normal Randomization}{36}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Remarks on Implementation}{35}{appendix.A}%
+\contentsline {chapter}{\numberline {4}Additional notes}{37}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{37}{chapter*.11}%
+\contentsline {section}{\numberline {4.1}truncated normal distribution part}{37}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{39}{chapter*.13}%
+\contentsline {chapter}{\numberline {5}One hot encoding}{39}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{39}{chapter*.13}%
+\contentsline {chapter}{\numberline {6}Further Reading}{41}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{41}{chapter*.15}%
+\contentsline {chapter}{\numberline {A}Remarks on Implementation}{43}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{45}{chapter*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{47}{chapter*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Index}{47}{chapter*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline References}{49}{chapter*.21}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

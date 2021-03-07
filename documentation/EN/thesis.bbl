@@ -40,7 +40,7 @@
       \strng{authorfullhash}{40c2c3f83701248d4475a3a0a6f84f9f}
       \field{labelalpha}{Don12}
       \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{LaTeX and Friends}
@@ -67,7 +67,7 @@
       \strng{authorfullhash}{0667c5674e19e2953b31f08b8d9093d5}
       \field{labelalpha}{ET11}
       \field{sortinit}{E}
-      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Das LATEX 2e-Sündenregister}
@@ -100,7 +100,7 @@
       \strng{authorfullhash}{1bdb4a31340bc6277dd3ffe6523ba20f}
       \field{labelalpha}{HM07}
       \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Listings Package}
@@ -134,7 +134,7 @@
       \field{extraname}{1}
       \field{labelalpha}{KM12}
       \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -169,13 +169,48 @@
       \field{extraname}{2}
       \field{labelalpha}{KM12}
       \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{4. Auflage}
       \field{title}{KOMA-Script}
       \field{year}{2012}
+    \endentry
+    \entry{kotz1994continuous}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=3e3c22dfe3b36ff075adfaa64ce7661a}{%
+           family={Kotz},
+           familyi={K\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=42134aac82ec7ee488d5679523870362}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Norman\bibnamedelima L},
+           giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=f775f6b5b6a3348f3f5ab0a994fdb58b}{%
+           family={Balakrishnan},
+           familyi={B\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {New York: Wiley}%
+      }
+      \strng{namehash}{a20479d02b5e40d874509cb165e30c91}
+      \strng{fullhash}{a20479d02b5e40d874509cb165e30c91}
+      \strng{bibnamehash}{a20479d02b5e40d874509cb165e30c91}
+      \strng{authorbibnamehash}{a20479d02b5e40d874509cb165e30c91}
+      \strng{authornamehash}{a20479d02b5e40d874509cb165e30c91}
+      \strng{authorfullhash}{a20479d02b5e40d874509cb165e30c91}
+      \field{labelalpha}{KJB94}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Continuous Univariate Distributions, Vol. 1 of Wiley Series in Probability and Statistics}
+      \field{year}{1994}
     \endentry
     \entry{ntheorem}{manual}{}
       \name{author}{2}{}{%
@@ -198,7 +233,7 @@
       \strng{authorfullhash}{67642c42f2bf85c6415cc69188ada37f}
       \field{labelalpha}{MS11}
       \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{An Extension of the LATEX-Theorem Evironment}
@@ -241,7 +276,7 @@
       \strng{authorfullhash}{8fca386a8f8bd6243f3461ae9167a2f4}
       \field{labelalpha}{Oet+11}
       \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Not So Short Introduction to LATEX2e}
@@ -272,7 +307,7 @@
       \strng{authorfullhash}{129e88d9b4e0ba07ca911d6e9aebfaca}
       \field{labelalpha}{Tan08}
       \field{sortinit}{t}
-      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{2}
@@ -301,7 +336,7 @@
       \strng{authorfullhash}{c169636b2668ff0c0fa3ef92e3836963}
       \field{labelalpha}{Ver09}
       \field{sortinit}{V}
-      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{FiXme – Collaborative annotation tool for LATEX}

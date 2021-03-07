@@ -110,14 +110,18 @@ appendix%
 
 \mainmatter%
 \pagestyle{headings}
-
-\include{introduction}
-\include{chapters}
-\include{conclusion}
+\input{introduction.tex}
+\input{chapter_DAPX.tex}
+\input{chapters.tex}
+\input{conclusion.tex}
+%\include{introduction}
+%\include{chapters}
+%\include{conclusion}
 
 % appendices (if appropriate)
 \appendix
-\include{appendix}
+\input{appendix.tex}
+%\include{appendix}
 % all appendices behind backmatter will go without numbers
 \backmatter
 
@@ -155,11 +159,9 @@ All figures in this document were created by the author using TikZ, the excellen
 \printindex
 
 % Bibliography
-\printbibliography[heading=bibintoc]
+\printbibliography[title={References},heading=bibnumbered]
 
-%In the final version, this should be empty and needn't be commented out. Someone who works sloppily should at least remember to comment out the fixme list, so that unfinished places are
-%not so obvious for the examiners.
-\listoffixmes
+
 %
 \end{document}
 % ==============================================================================

@@ -1,0 +1,117 @@
+%% ==============================
+\chapter{Introduction}
+\label{ch:introduction}
+%% ==============================
+Auctions have a long history. Herodotus reports that auction were used in Babylon as early as 500 B.C \cite{krishna2009auction}. One of the most famous historical auction happened at 193 A.D. The Pretorian Guard sold the Roman Empire by means of an auction\cite{krishna2009auction}. Nowadays we can find auctions widely used for real estate, commodities, art pieces, antiques, and one of the largest revenues for the government are often from spectrum auctions (typical revenue is estimated in billions of euros) and quota auctions. With the fast development of internet, the modem auctions like eBay and online advertising are quite popular. Therefore auctions are highly related to our life and play a very important role in our society. Recently the 2020 Nobel in Economics price is rewarded to two U.S. auction theorists, Paul Milgrom and Robert Wilson, which again highlighted the importance of auctions. 
+Auction mechanism design is one of the most active and well-studied problem in algorithmic game theory. In a simple setting where an auctioner has one item for sale and there are $n$ interested bidders,   
+
+I wannna a history introduction about optimal auction for single item, then multiple, robust about ratio, maxmizing revenue, and then mentioned robust paper, and we will implement the experiment from this paper and evaluate the correspond ratio. 
+
+
+Introduction about sbsi
+
+then single multiple items
+
+introduce the auction model 
+
+truthful mechanisms
+
+notation of revenue, optimal and welfare
+
+myerson optimal auction introduction
+
+
+In real life, it is impossible to know the exact prior distribution of the bidders' valuation. In addition, it may impact on bidders' incentive and performance of the auction mechanism. Thus 
+
+
+We evaluate the \textit{robust approximation ratio} for the single-item (m=1) and single-bidder auctions under deterministic mechanism (Section \ref{ch:DAPX}) and randomized mechanism (Section \ref{ch:APX}). We take a few common probability distributions as the bidder's valuation distribution. We perform our auction experiments using the idea of Monte Carlo methods by drawing random samples (bids) from given valuation distribution and then obtaining the expected revenue by averaging the total experimental revenue.
+
+%% ==============================
+\chapter{Preliminaries}
+\label{ch:Preliminaries}
+%% ==============================
+\section{Model and Notation}
+Our notations will be consistent with the Robust paper \cite{giannakopoulos2020robust}. We let $\mathbb{F}_{\mu,\sigma}$ denote the class of ($\mu, \sigma$) distributions whose expectation is $\mu$ and standard deviation is \textit{at most} $\sigma$ and  $\mathbb{F}^=_{\mu,\sigma}$ denote the subclass with standard deviation of \textit{exactly} $\sigma$.
+
+We consider auctions with $m$ items and a single additive bidder, whose valuations ($v_1,...,v_m$) for the items are drawn from a joint distribution $\vec{F}$ over $\mathbb{R}^m_{\geqslant0}$. We denote the marginal distribution of $v_i$ by $F_i$, and assume that it has finite mean and variance. We have vectors $\vec{\mu} = (\mu_1,...,\mu_m) \in \mathbb{R}^m_{\geqslant0}, \vec{\sigma} = (\sigma_1,...,\sigma_m) \in \mathbb{R}^m_{\geqslant0}$ and let $\mathbb{F}_{\vec{\mu},\vec{\sigma}}$ denote the class of all $m$-dimensional distributions whose $i$-th marginal is ($\mu_i, \sigma_i$)-distributed, for all $i = 1,...,m$. In Section \ref{ch:DAPX} and Section \ref{ch:APX} we study auctions for single item and single bidder, so the problem becomes even simpler, i.e., the bidder's valuation $v$ is drawn from a single-dimensional distribution $F$ with expectation $\mu$ and standard deviation \textit{at most} $\sigma$.
+
+A direct revelation selling \textit{mechanism} for a single bidder and $m$ items is described by a pair of functions ($x,\pi$) where $x: \mathbb{R}^m_{\geqslant0} \to [0,1]^m $ is the \textit{allocation rule} and $\pi:\mathbb{R}^m_{\geqslant0} \to\mathbb{R}_{\geqslant0}$ is the \textit{payment rule}. If $\vec{v}$ is the valuation vector submitted by the bidder, then she receive each item $i$ with probability $x_i(\vec{v})$, and pay $\pi(\vec{v})$ to the auctioneer. Through out the whole thesis, we restrict our study to \textit{truthful mechanisms}, which needs to satisfy following conditions
+\begin{align}
+    \label{con:1}
+    x(\vec{v}) \cdot \vec{v} - \pi(\vec{v}) &\geqslant x(\vec{w}) \cdot \vec{v} - \pi(\vec{w}) \hspace{1cm} &\text{for all }  \vec{v}, \vec{w};\\
+    \label{con:2}
+    x(\vec{v}) \cdot \vec{v} - \pi(\vec{v}) &\geqslant 0 \hspace{2cm} &\text{for all }  \vec{v}, \vec{w}.
+\end{align}
+Condition (\ref{con:1}), known as \textit{incentive compatibility}, ensures that the bidder has no any incentive to lie about her true valuation; the Condition (\ref{con:2}), known as \textit{individual rationality}, ensures that the bidder will not lose anything by truthfully participating in the auction, thus it guarantees that the bidder will participate the auction.
+
+Let $\mathbb{A}_m$ denote the space of all truthful selling mechanisms. Then, given an $m$-dimensional distribution $\vec{F}$, we denote by
+\begin{itemize}
+    \item REV($A;\vec{F}$) = $\mathbb{E}_{\vec{v} \sim \vec{F}}[\pi(\vec{v})]$, the expected \textit{revenue} of $A$;
+    \item WEL($A;\vec{F}$) = $\mathbb{E}_{\vec{v} \sim \vec{F}}[x(\vec{v})\cdot\vec{v}]$, the expected \textit{welfare} of $A$;
+    \item OPT($\vec{F}$) = $\sup_{A\in \mathbb{A}_m} \text{REV}(A;\vec{F})$, the optimum revenue;
+    \item VAL($\vec{F}$) = $\sup_{A\in \mathbb{A}_m} \text{WEL}(A;\vec{F})$ the optimum welfare. By definition, this is also the welfare of a VCG auction\footnote{VCG auction is an application of VCG mechanism \cite[p.~216--222]{nisan_roughgarden_tardos_vazirani_2007} for welfares maximization, another well-known special case for single item auction is called the Vickrey Auction(\cref{def:VA})}; moreover, for a single additive bidder with a joint distribution in $\mathbb{F}_{\vec{\mu},\vec{\sigma}}$, this is just the sum of the marginal expectations, VAL($F$) = $\sum^m_{j=1} \mu_j$.
+\end{itemize}
+Notice that, due to (\ref{con:2}), we can derive the relation for the above quantities: for any mechanism and distribution, 
+\begin{center}
+    REV($A; \vec{F}) \leqslant \text{WEL}(A;\vec{F})$ \hspace{1cm} and \hspace{1cm} OPT($\vec{F}) \leqslant \text{VAL}(\vec{F})$.
+\end{center}
+
+Our goal of this thesis is to evaluate the \textit{robust approximation ratio} under different probability distributions. It is ratio of the optimal revenue over the expected revenue when a auctioneer chooses the best (revenue-maximizing) selling mechanism $A$, given only the knowledge of the means $\vec{\mu}$ and standard deviations $\vec{\sigma}$ and then an adversary ("nature") responds by choosing a worst-case distribution $\vec{F}$ with respect to the statistical information $\vec{\mu}$ and $\vec{\sigma}$.
+\begin{definition}The \textit{robust approximation ratio} is defined
+\begin{equation}
+    \text{APX}(\vec{\mu}, \vec{\sigma}) = \inf_{ A\in \mathbb{A}_m}  \sup_{\vec{F}\in \mathbb{F}_{\vec{\mu}, \vec{\sigma}} } \frac{\text{OPT}(\vec{F})}{\text{REV}(A,\vec{F})}
+\end{equation}
+\label{def: apx}
+If the allocation rule satisfies $x(\vec{v}) \in \{0,1\}$ for all $\vec{v}$, we call $A$ are the \textit{deterministic} mechanisms, and the quantity in (\ref{def: apx}) will be denoted by DAPX($\vec{\mu}, \vec{\sigma}$).
+\end{definition}
+
+ 
+\section{Myerson Optimal Auction}
+In Section \ref{ch:DAPX} and Section \ref{ch:APX} we study single-item and single-bidder auction which is a special case of the single-item auction. We know that Myerson optimal mechanism \cite{myerson1981optimal}
+(or revenue-maximising mechanism) provide a very elegant solution to achieve the optimal revenue for single-item auctions. Thus we want to use their mechanism to design our experiment to obtain the optimal revenue.
+
+To introduce Myerson optimal auction, we start with the definitions and  assumptions first (with the help of \cite{myerson1981optimal} and \cite[p.~335--338]{nisan_roughgarden_tardos_vazirani_2007}). We assume that there is one auctioneer who has a single item to sell. He faces $n$ bidders, numbered $1,2,...,n$. For each bidder, she has a valuation for the item which is the maximum amount she is willing to pay. Let $\vec{v} = (v_1, v_2,...,v_n)$ denote the bidders' valuations, and these valuations are drawn independently at random from known (but not necessarily identical) continuous probability distributions. For simplicity, we assume that $v_i \in [0,h]$ for all $i$ and $i = 1,.. .,n$. We denote $F_i$ as the cumulative density function from which bidder $i$'s valuation is drawn, and $f_i$ is the corresponding density function. Since the bidders' valuations are independent, we can consider $\vec{v}$ is drawn from a product distribution $\vec{F} = F_1 \times ...\times F_n$. \\
+
+We consider a truthful single-item auction, which is defined
+\begin{definition}[\textbf{Vickrey auction with reserve price $p$}]
+The \textit{Vickrey auction with reserve price $p$}, $\text{VA}_p$, sells the item to the highest bidder bidding at least $p$. The price the winning bidder pays is the maximum of the second highest bid and $p$.
+\label{def:VA}
+\end{definition}
+For a single bidder, the above auction simply becomes a \textit{take-it-or-leave-it} auction with reserve price $p$ (assume $p \geqslant 0$). We implement this auction for our experiment in Section \ref{ch:DAPX} and \ref{ch:APX}. 
+\vspace{0.4cm}
+\begin{definition}
+\label{def: virtual_valuation} The \textit{virtual valuation} of bidder $i$ with valuation $v_i$ is 
+\begin{equation}\notag 
+    \psi_i(v_i) = v_i - \frac{1-F_i(v_i)}{f_i(v_i)}
+\end{equation}
+\end{definition}
+\vspace{0.4cm}
+\begin{theorem} [\textbf{Myerson}]\textit{The expected revenue of an truthful mechanism,} $A$ \textit{ with bidders' valuations drawn independently from $F_1, F_2,...,F_n$,} \textit{is equal to its expected virtual welfare, i.e.,}
+\begin{equation}\notag 
+    \mathbb{E}_{\vec{v} \sim \vec{F}}[\pi(\vec{v})] =  \mathbb{E}_{\vec{v}\sim \vec{F}}[\sum_i \psi_i(v_i)x_i(\vec{v})]
+\end{equation}
+ \label{thm: myerson} 
+\end{theorem}
+Thus the Myerson's theorem tells us instead of maximizing expected revenue, we can maximize the expected virtual welfare. To make sure maximizing virtual welfare results in a truthful mechanism, Myerson \cite{myerson1981optimal} requires a simple regularity assumption. We can say our problem is regular if the the virtual valuation $\psi_i(v_i)$ is monotone nondecreasing in $v_i$ for all $i$. A sufficient condition for monotone virtual valuations is implied by the monotone hazard rate assumption. The hazard rate is defined as $\frac{f(x)}{1-F(x)}$, so when hazard rate is monotone nondecreasing, then virtual valuation are also monotone nondecreasing.
+
+For a special case, if our didders' valuation is independently identical distributed from $F$, then the Myerson optimal auction becomes a modified Vickery auction,
+\begin{theorem} The \textit{optimal single-item auction for bidders with valuations drawn i.i.d. from distribution $F$ is the Vickrey auction with reservation price $\psi^{-1}(0)$, i.e., $\text{VA}_{\psi^{-1}(0)}$}
+\end{theorem}
+Thus using above theorem, we can denote the optimal revenue for the single-item and single-bidder auction with reserve price $p$ as
+\begin{equation}
+\label{eq: optrev}
+\text{OPT}(F) = \underset{p \geqslant 0}{\text{max}} \quad \text{REV}(p;F) = \underset{p \geqslant 0}{\text{max}} \quad p \cdot \left(1-F(p-)\right) 
+\end{equation}
+where $F(p-) = Pr[x<p]$. We also abuse the notation and write $\text{REV}(p;F)$ instead of $\text{REV}(A;F)$ if $A$ is the deterministic auction that sells the item at price $p$.\\
+We denote $\text{OPT}(\cdot)$ as Myerson optimal operator. Then let $p_{opt}$ denote the optimal reserve price and we have 
+\begin{equation}
+\label{eq: optprice}
+    p_{opt} = \underset{p \geqslant 0}{\text{argmax}} \quad p \cdot \left(1-F(p-)\right) =  \psi^{-1}(0)
+\end{equation}
+We will using both \cref{eq: optrev} and \cref{eq: optprice} in the Section \ref{ch:DAPX} and Section \ref{ch:APX} to assist our experiment.
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "thesis"
+%%% End: 
